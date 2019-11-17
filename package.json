@@ -12,8 +12,10 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "eject": "react-scripts eject",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test:cy": "cypress run",
+    "test:cy:open": "cypress open"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -29,5 +31,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "cypress": "^3.6.1"
   }
 }
