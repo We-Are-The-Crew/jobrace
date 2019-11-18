@@ -2,9 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 import Icon from '../atoms/Icon';
 
-const PageStyle = styled.div`
+const PageRoot = styled.div`
   height: 100vh;
-  padding: 2rem;
+  padding: 5rem;
   border: solid 1rem var(--color-brand-1);
   header{
     display: flex;
@@ -14,12 +14,12 @@ const PageStyle = styled.div`
 `;
 
 const Page = ({ children }) => (
-  <PageStyle>
+  <PageRoot>
     <header>
       <Icon is="logo" width="150" />
     </header>
     {children}
-  </PageStyle>
+  </PageRoot>
 );
 
 export default Page;

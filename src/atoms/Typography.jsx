@@ -37,9 +37,18 @@ const textStyle = (element) => ({
 
 const Text = styled.p`
   margin: 1rem 0;
+  line-height: 1.2;
   ${({ as }) => as && textStyle(as) }
   ${({ uppercase }) => uppercase && css`
     text-transform: uppercase;
+  `}
+  ${({ align }) => align && css`
+    text-align: ${align};
+  `}
+  ${({ signature }) => signature && css`
+    font-family: var(--font-tertiary);
+    font-size: 7.2rem;
+    font-weight: normal;
   `}
 `;
 
