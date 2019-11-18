@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Route, Link } from 'react-router-dom';
 import styled from 'styled-components';
-import { Heading4, Paragraph } from '../atoms/Typography';
+import Text from '../atoms/Typography';
 
 const ErrorStyle = styled.div`
   margin: 1rem 0;
@@ -22,9 +22,9 @@ const Status = ({ code, children }) => (
 export const NotFound = () => (
   <Status code="404">
     <ErrorStyle>
-      <Heading4 uppercase>
+      <Text as="h3" uppercase>
         The content you are looking for does not exist
-      </Heading4>
+      </Text>
       <Link to="/">Back to Home</Link>
     </ErrorStyle>
   </Status>
@@ -33,10 +33,10 @@ export const NotFound = () => (
 export const NoAccess = () => (
   <Status code="401">
     <ErrorStyle>
-      <Heading4 uppercase>
+      <Text as="h3" uppercase>
         Restricted Access
-      </Heading4>
-      <Paragraph>You are not authorized to view this page</Paragraph>
+      </Text>
+      <Text>You are not authorized to view this page</Text>
       <Link to="/">Back to Home</Link>
     </ErrorStyle>
   </Status>

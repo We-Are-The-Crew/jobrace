@@ -8,11 +8,13 @@ const GlobalStyle = createGlobalStyle`
   }
 }
 :root{
-  --color-brand-1: #fff;
-  --color-brand-2: #222;
+  --color-brand-1: #4285F4;
+  --color-brand-2: #bada55;
   --color-brand-3: #bada55;
   --color-brand-4: #bada55;
   --color-brand-5: #bada55;
+  --color-bg: #fff;
+  --color-fg: #222;
   --color-link: #bada55;
   --color-focus: #bada55;
   --color-highlight: #bada55;
@@ -20,7 +22,8 @@ const GlobalStyle = createGlobalStyle`
   --color-success: #F5F5F8;
   --color-warning: #E06811;
   --font-primary: system-ui, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  --font-secondary: 'Open Sans Condensed', sans-serif;
+  --font-secondary: 'Titillium Web', sans-serif;
+  --font-tertiary: 'Bebas Neue', cursive;
   --round-radius-1: 1.5rem;
   --round-radius-2: 4rem;
   --drop-shadow-1: .1rem .1rem .2rem rgba(0, 0, 0, .05);
@@ -33,11 +36,8 @@ const GlobalStyle = createGlobalStyle`
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   @media (prefers-color-scheme: dark) {
-    --color-brand-1: #333;
-    --color-brand-2: #eee;
-    --color-brand-3: #bada55;
-    --color-brand-4: #bada55;
-    --color-brand-5: #bada55;
+    --color-bg: #fff;
+    --color-fg: #222;
     --color-link: #bada55;
     --color-focus: #bada55;
     --color-highlight: #bada55;
@@ -46,8 +46,8 @@ const GlobalStyle = createGlobalStyle`
 body{
   width: 100%;
   margin: 0;
-  background: var(--color-brand-1);
-  color: var(--color-brand-2);
+  background: var(--color-bg);
+  color: var(--color-brand-fg);
   font: 1.6rem/1.5 var(--font-primary);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
